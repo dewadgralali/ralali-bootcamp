@@ -1,13 +1,16 @@
-@include('layout/header')
-
-<body>
-  <header class="site-header">
-    <h1>Ralali Bootcamp</h1>
-    <form class="search-bar">
-      <input type="text" name="keyword">
-      <button type="submit">Cari</button>
-    </form>
-  </header>
-</body>
-
-</html>
+@extends('master')
+@section('content')
+  <div class="container">
+    <div class="content">
+      @foreach($data as $d)
+      <div class="panel panel-default">
+        <div class="panel-heading">$d->title</div>
+        <div class="panel-body">
+          $d->content
+        </div>
+        <div class="panel-footer">$d->date</div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+@endsection
