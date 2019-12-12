@@ -1,4 +1,10 @@
 @extends('master')
 @section('content')
-  Index page
+
+  Index pageasdasd
 @endsection
+
+Hello world
+hello crederis
+hello giri
+hello yansen
